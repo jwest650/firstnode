@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+            rel="stylesheet"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+            defer
+        ></script>
+        <script src="./form.js" defer></script>
+
+        <title>Add books</title>
+    </head>
+    <body
+        style="
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+        "
+    >
+        <h1 style="text-align: center; font-family: Bitter, serif" class="add">
+            Add book to your library
+        </h1>
+        <form action="/addbook" method="post" class="form">
+            <div>
+                <label for="title">title</label>
+                <input type="text" name="title" placeholder="title" />
+            </div>
+            <div>
+                <label for="image">image</label>
+                <input type="text" name="image" placeholder="image url" />
+            </div>
+            <div>
+                <label for="desc"></label>
+                <textarea name="desc" id="desc" cols="20" rows="5"> </textarea>
+            </div>
+            <div style="text-align: right">
+                <button type="submit">Add</button>
+            </div>
+        </form>
+    </body>
+</html>
